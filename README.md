@@ -1,1 +1,1 @@
-# guided-activities
+# Guided-Activities
