@@ -1,11 +1,11 @@
 Challenge 1: Containerizing a Maven Project
-Take a simple Maven project and create a Docker container to make it deployable across different environments. ( lbg-hello-world-maven or last week's project )
+Take a simple Maven project and create a Docker container to make it deployable across different environments. ( lbg-hello-world-maven )
 
-Challenge 2: Jenkins Pipeline with SonarQube Integration and Artifact Archiving
-Set up a Jenkins pipeline for a Maven project that includes steps to compile and package the application, analyze code quality with SonarQube, run tests, and archive the resulting build artifact. 
+Challenge 2: Jenkins Pipeline with SonarQube Integration and Artifact Archiving 
+Set up a Jenkins pipeline for a Maven project that includes steps to compile and package the application, analyze code quality with SonarQube, run tests, and archive the resulting build artifact. (Using last week's project)
 
 Challenge 3: Implementing a Jenkins Pipeline to Build a Dockerized Maven Application with SonarQube
-Set up a Jenkins pipeline that both builds and containerizes a Maven project. Additionally, you will integrate SonarQube code quality checks, ensuring that code meets specified standards before proceeding to create and archive the Docker container. 
+Set up a Jenkins pipeline that both builds and containerizes a Maven project. Additionally, you will integrate SonarQube code quality checks, ensuring that code meets specified standards before proceeding to create a Docker container. (Using last week's project)
 
 Challenge 4: Build Services with Docker Compose
 Introduction
