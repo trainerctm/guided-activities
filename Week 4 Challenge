@@ -1,0 +1,37 @@
+Challenge 1: Containerizing a Maven Project
+Take a simple Maven project and create a Docker container to make it deployable across different environments. ( lbg-hello-world-maven or last week' project )
+
+Challenge 2: Jenkins Pipeline with SonarQube Integration and Artifact Archiving
+Set up a Jenkins pipeline for a Maven project that includes steps to compile and package the application, analyze code quality with SonarQube, run tests, and archive the resulting build artifact. 
+
+Challenge 3: Implementing a Jenkins Pipeline to Build a Dockerized Maven Application with SonarQube
+Set up a Jenkins pipeline that both builds and containerizes a Maven project. Additionally, you will integrate SonarQube code quality checks, ensuring that code meets specified standards before proceeding to create and archive the Docker container. 
+
+Challenge 4: Build Services with Docker Compose
+Introduction
+For the last six months, the Acme Anvil Corporation has been migrating some of their bare metal infrastructure to Docker containers. Your team wants to find an easier way to deploy applications that consist of multiple containers and has decided to use Docker Compose. You have been tasked with setting up an internal blog so the team can write technical articles. This blog will consist of two services: a Ghost Blog service and a MySQL service. Both services will use volumes for persistent storage.
+
+HINT 
+1.	Create your first service called ghost.
+2.	Use the ghost:1-alpine image.
+3.	Call the container ghost-blog.
+4.	You will use five environment variables:
+•	Set database__client to mysql.
+•	Set database__connection__host to mysql.
+•	Set database__connection__user to root.
+•	Set database__connection__password to P4sSw0rd0!
+•	Set database__connection__database to ghost.
+1.	Create a volume called ghost-volume and map it to /var/lib/ghost.
+2.	Map port 80 on the host to port 2368 on the container.
+3.	The ghost_blog container will be dependent on the mysql container.
+4.	Make sure that the container always restarts.
+5.	Create a second service called mysql.
+6.	Use the mysql:5.7 image.
+7.	Name the container ghost-db.
+8.	You will add the following environment variable:
+•	Set MYSQL_ROOT_PASSWORD to P4sSw0rd0!
+1.	Create a volume called mysql-volume and map it to /var/lib/mysql.
+2.	Make sure that the container always restarts.
+3.	Make sure that the two volumes are called ghost-volume and mysql-volume.
+4.	Execute a compose up and make sure to use the detached flag.
+5.	Verify that your app is up and running.
